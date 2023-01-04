@@ -2,16 +2,24 @@
 body{
     color: black;
     font-family:  'Lucida Console', monospace;
-}
-
-.container{
     text-align: justify;
     font-size: clamp(16px, 3vw, 22px);
     width: min(80%,600px);
     margin:auto;
+    display: flex;
+    flex-direction: column;
 }
 
 img{
     width: 20%;
     height: auto;
+}
+
+span{
+    margin-bottom: 10px;
+}
+
+a{
+    color: black;
+    margin: 10px 0;
 }
