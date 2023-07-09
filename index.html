@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Simon Van Mello</title>
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <h1>Simon Van Mello</h1>
+    <section id="firstSection">
+        <a href="#contactSection" id="jumpToContactSection">CONTACT</a>
+        <h2 id="realName">Simon Van Mello</h2>
+        <p id="aboutMe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel illum, consequatur laudantium repellendus facere qui accusantium saepe quia itaque eligendi iusto necessitatibus. Cum, aliquam? Necessitatibus saepe beatae itaque minima laudantium?
+        </p>
+        <div id="scrollIndicatorContainer">
+            <div id="scrollProgressBarContainer">
+                <div id="scrollProgressBar"></div>
+            </div>
+            <img src="assets/images/mouse.png" id="mouseImage" draggable="false" alt="mouseImage" />
+        </div>
+    </section>
+    <section id="secondSection">
+        
+    </section>
+    <section id="projectsSection">
+        <div class="projectContainer">
+            <img src="https://dummyimage.com/1920x1080/580ef6/fff.png&text=img+here" class="projectImage projectImageLeft" draggable="false" alt="#" />
+            <div class="projectTextContainer">
+                <h2 class="projectTitle">Project title</h2>
+                <p class="projectDescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos accusamus labore sapiente itaque, quo pariatur quasi tempora porro libero, adipisci odio ea ullam, iusto minus dolores quos rerum laudantium!
+                </p>
+            </div>
+        </div>
+        <div class="projectContainer">
+            <div class="projectTextContainer">
+                <h2 class="projectTitle">Project title</h2>
+                <p class="projectDescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores iure magni tenetur nam ipsam, officiis quibusdam sequi culpa reiciendis quod aut ducimus nulla quos id voluptatem sapiente asperiores esse?
+                </p>
+            </div>
+            <img src="https://dummyimage.com/1920x1080/580ef6/fff.png&text=img+here" class="projectImage projectImageRight" draggable="false" alt="#" />
+        </div>
+        <div class="projectContainer">
+            <img src="https://dummyimage.com/1920x1080/580ef6/fff.png&text=img+here" class="projectImage projectImageLeft" draggable="false" alt="#" />
+            <div class="projectTextContainer">
+                <h2 class="projectTitle">Project title</h2>
+                <p class="projectDescription">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati enim, est exercitationem iusto officia voluptates neque deserunt quo, accusamus repellendus sequi voluptate! Quia facilis aliquam doloribus tempore, corporis iure aspernatur?
+                </p>
+            </div>
+        </div>
+          <div class="projectContainer">
+            <div id="langagesImagesContainer">
+                <img src="https://dummyimage.com/512x512/580ef6/fff.png&text=img+1" class="langageImage" alt="#" draggable="false" id="pythonImage" />
+                <img src="https://dummyimage.com/512x512/580ef6/fff.png&text=img+2" class="langageImage" alt="#" draggable="false" id="javascriptImage" />
+                <img src="https://dummyimage.com/512x512/580ef6/fff.png&text=img+3" class="langageImage" alt="#" draggable="false" id="bashImage" />
+                <img src="https://dummyimage.com/512x512/580ef6/fff.png&text=img+4" class="langageImage" alt="#" draggable="false" id="javaImage" />
+            </div>
+            <div id="langageDescriptionContainer">
+                <h2 class="projectTitle">Project title</h2>
+                <p class="projectDescription">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio placeat pariatur ab, ad neque temporibus doloremque quis voluptas ea voluptates quaerat ipsa corrupti sed eaque. Voluptatum possimus perspiciatis asperiores quae!
+                </p>
+            </div>
+          </div>
+    </section>
+    <section id="contactSection">
+        <!-- <div id="copiedPopup"></div> -->
+        <h2 id="contactTitle">CONTACT</h2>
+        <div id="contactSectionContent">
+            <form id="contactForm" method="POST" action="https://formspree.io/f/xeqbqkvk">
+                <input type="text" name="name" autocomplete="off" class="input" required placeholder="NAME" id="nameInput">
+                <input type="email" name="email" autocomplete="off" class="input" required placeholder="EMAIL" id="emailInput">
+                <textarea name="message" autocomplete="off" class="input" required placeholder="MESSAGE" id="messageInput"></textarea>
+                <button id="submitButton" type="submit">Send your message 🚀</button>
+            </form>
+            <div id="contactInformation">
+                <div class="inlineInformationContainer">
+                    <img src="assets/images/pin.png" class="contactInformationImage" draggable="false" alt="#" />
+                    <span class="contactInformationText">Belgium</span>
+                </div>
+                <div class="inlineInformationContainer">
+                    <img src="assets/images/email.png" class="contactInformationImage" draggable="false" alt="#" />
+                    <span class="contactInformationText" id="myEmail">simon.vanmello@proton.me</span>
+                </div>
+                <span class="inlineSeparator"></span>
+                <div id="linksContainer">
+                    <a href="https://github.com/SimonVanMello" class="link" target="_blank">
+                        <img src="assets/images/github.png" draggable="false" class="linkImage" alt="#" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/simon-van-mello-311a63273/" class="link" target="_blank">
+                        <img src="assets/images/linkedin.png" draggable="false" class="linkImage" alt="#" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="utils.js" defer></script>
+    <script src="index.js" defer></script>
+</body>
+</html>

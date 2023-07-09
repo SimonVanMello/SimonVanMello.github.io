@@ -1,0 +1,18 @@
+{
+    "pythonImage": {
+        "name": "Python3",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu bibendum at varius vel. Dolor purus non enim praesent elementum facilisis. Integer enim neque volutpat ac tincidunt. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Rutrum quisque non tellus orci ac auctor. Rutrum quisque non tellus orci ac auctor augue. Nec feugiat in fermentum posuere urna nec. Mi sit amet mauris commodo quis imperdiet massa tincidunt."
+    },
+    "javascriptImage": {
+        "name": "Javascript",
+        "text": "Ornare massa eget egestas purus viverra accumsan in nisl. Aliquet enim tortor at auctor urna nunc. Eget nunc scelerisque viverra mauris in aliquam sem. Augue interdum velit euismod in pellentesque massa. Sit amet purus gravida quis blandit turpis cursus in. At imperdiet dui accumsan sit amet nulla facilisi morbi. Montes nascetur ridiculus mus mauris vitae. Quisque sagittis purus sit amet. Mi bibendum neque egestas congue quisque egestas. At elementum eu facilisis sed. Enim ut sem viverra aliquet eget sit. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Est ullamcorper eget nulla facilisi etiam. In pellentesque massa placerat duis ultricies lacus sed turpis. Sollicitudin ac orci phasellus egestas tellus. Ultricies tristique nulla aliquet enim tortor at auctor urna. Neque vitae tempus quam pellentesque."
+    },
+    "bashImage": {
+        "name": "Bash",
+        "text": "Enim diam vulputate ut pharetra sit amet aliquam. Dignissim convallis aenean et tortor at. Eu consequat ac felis donec. Consectetur libero id faucibus nisl tincidunt eget nullam non. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Massa enim nec dui nunc mattis enim ut tellus elementum. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Massa sed elementum tempus egestas."
+    },
+    "javaImage": {
+        "name": "Java",
+        "text": "Purus semper eget duis at. Senectus et netus et malesuada fames ac turpis egestas. Sed ullamcorper morbi tincidunt ornare. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Nisl purus in mollis nunc sed id semper. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Tristique senectus et netus et malesuada fames. Pellentesque habitant morbi tristique senectus et. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Fringilla urna porttitor rhoncus dolor purus non."
+    }
+}

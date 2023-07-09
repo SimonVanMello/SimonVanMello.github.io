@@ -1,0 +1,430 @@
+/* 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end of reset css */
+
+
+@font-face {
+    font-family: "Estrella";
+    src: url("assets/fonts/Estrella.otf");
+}
+
+@font-face {
+    font-family: "NewGate";
+    src: url("assets/fonts/newgate-free.otf");
+}
+
+@font-face {
+	font-family: "AndersonGrotesk";
+	src: url("assets/fonts/AndersonGrotesk.otf");
+}
+
+@font-face {
+	font-family: ZenKakuGothicNew;
+	src: url("assets/fonts/ZenKakuGothicNew-Regular.ttf");
+}
+
+:root{
+	--black: #1A1C22;
+	--grey: #3D3A50;
+	--light-grey: #929292;
+	--purple: #580ef6;
+	--white: #F7F7F7;
+}
+
+
+
+html{
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body{
+	color: var(--black);
+	height: 100%;
+}
+
+h1{
+	display: none;
+}
+
+.noselect {
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+  
+
+
+section#firstSection{
+	height: 100%;
+	background-image: url("assets/images/bg.svg");
+	background-color: var(--white);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	color: var(--white)
+}
+
+a#jumpToContactSection{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	text-decoration: none;
+	color: var(--light-grey);
+	font-family: "AndersonGrotesk", sans-serif;
+	font-size: 1.2rem;
+	transition: 100ms;
+}
+
+a#jumpToContactSection:hover{
+	color: var(--white);
+}
+
+a#jumpToContactSection:active{
+	transform: scale(0.9);
+}
+
+h2#realName{
+	margin-left: clamp(80px, 20vw, 250px);
+	margin-top: 300px;
+	font-size: 100px;
+	font-family: "NewGate", sans-serif;
+}
+
+p#aboutMe{
+	font-family: "AndersonGrotesk", sans-serif;
+	font-size: x-large;
+	max-width: 50%;
+	margin-top: 200px;
+	margin-left: clamp(80px, 20vw, 250px);
+	line-height: 2rem;
+}
+
+div#scrollIndicatorContainer{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 300px;
+	height: 30px;
+	transition: 250ms;
+}
+
+div#scrollProgressBarContainer{
+	border-bottom: 1px solid var(--black);
+	height: 1px;
+	width: 100%;
+}
+
+div#scrollProgressBar{
+	transition: 250ms;
+	width: 0;
+	border: 0 solid var(--purple);
+	background-color: var(--purple);
+}
+
+img#mouseImage{
+	height: 100%;
+	mix-blend-mode: difference;
+}
+
+
+
+section#secondSection{
+	height: 350px;
+	background-image: url("assets/images/black_to_white_background.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+
+
+section#projectsSection{
+	height: 3200px;
+	background-color: var(--white);
+	background-image: url("assets/images/white_to_black_background.svg");
+	background-position: bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projectContainer{
+	height: 450px;
+	width: 70%;
+	margin-top: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.projectContainer:first-child{
+	margin-top: 0;
+}
+
+.projectImage{
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.projectImageLeft{
+	box-shadow:  14px 14px 28px var(--light-grey),
+				-14px -14px 28px #ffffff;
+}
+
+.projectImageRight{
+	box-shadow:  -14px 14px 28px var(--light-grey),
+				14px -14px 28px #ffffff;
+}
+
+.projectTextContainer{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.projectTitle{
+	font-family: "ZenKakuGothicNew", sans-serif;
+	font-size: 2.3rem;
+	font-weight: bold;
+	text-align: start;
+	margin: 30px 0;
+}
+
+.projectDescription{
+	font-family: "ZenKakuGothicNew", sans-serif;
+	font-size: 1.5rem;
+}
+
+div#langagesImagesContainer{
+	width: 450px;
+	margin-right: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div#langagesImagesContainer:hover > :not(:hover){
+	opacity: 0.4;
+}
+
+img.langageImage{
+	height: 40%;
+	border-radius: 20px;
+	margin: 5%;
+	box-shadow: 14px 14px 28px var(--light-grey),
+				-14px -14px 28px #ffffff;
+	cursor: pointer;
+	transition: all 200ms;
+}
+
+img.langageImage:active{
+	transform: scale(0.95);
+}
+
+div#langageDescriptionContainer{
+	width: 60%;
+}
+
+
+section#contactSection{
+	height: 700px;
+	overflow: hidden;
+	background-color: var(--black);
+}
+
+/* div#copiedPopup{
+	width: 100px;
+	height: 20px;
+	border-radius: 12px;
+	background-color: var(--purple);
+	display: block;
+	position: absolute;
+	top: 3870px;
+	left: 964px;
+} */
+
+h2#contactTitle{
+	height: 20%;
+	margin-bottom: 20px;
+	font-family: "NewGate", sans-serif;
+	font-size: 5rem;
+	text-align: center;
+	color: var(--white);
+}
+
+div#contactSectionContent{
+	height: 80%;
+	display: flex;
+}
+
+form#contactForm{
+	height: 100%;
+	width: 30%;
+	margin: 0 5% 0 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.input{
+	width: 100%;
+	border: solid 1.5px var(--grey);
+	border-radius: 10px;
+	background: none;
+	padding: 1rem;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	color: var(--white);
+	transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+	font-family: "AndersonGrotesk", sans-serif;
+}
+
+.input:focus{
+	outline: none;
+	border: 1.5px solid var(--white);
+}
+
+textarea#messageInput{
+	height: 150px;
+	min-height: 80px;
+	resize: vertical;
+}
+
+button#submitButton{
+	width: 50%;
+	padding: 10px 22px;
+	border-radius: 6px;
+	border: none;
+	color: var(--white);
+	font-family: "AndersonGrotesk", sans-serif;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: var(--purple);
+	transition: all 0.1s ease;
+}
+
+button#submitButton:active{
+	transform: scale(0.9);
+}
+
+div#contactInformation{
+	height: 100%;
+	width: 25%;
+	margin: 0 20% 0 5%;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+div.inlineInformationContainer{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+img.contactInformationImage{
+	height: 100%;
+	filter: invert();
+}
+
+span.contactInformationText{
+	margin-left: 50px;
+	display: inline-flex;
+	align-items: center;
+	font-family: "AndersonGrotesk", sans-serif;
+	font-size: larger;
+	color: var(--light-grey);
+	cursor: pointer;
+	transition: 100ms;
+}
+
+span.contactInformationText:hover{
+	color: var(--white);
+}
+
+span.contactInformationText:active{
+	transform: scale(0.95);
+}
+
+span.inlineSeparator{
+	height: 0;
+	width: 100%;
+	border: 1px solid var(--grey)
+}
+
+div#linksContainer{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+a.link{
+	text-decoration: none;
+	transition: 0.1s;
+}
+
+a.link:active{
+	transform: scale(0.9);
+}
+
+img.linkImage{
+	width: 64px;
+}
