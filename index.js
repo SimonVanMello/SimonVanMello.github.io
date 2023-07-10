@@ -3,10 +3,6 @@ let pageHeight, langagesData;
 $(document).ready(() => {
     $(document).scroll(() => handleScroll($(document).scrollTop()));
     $(".contactInformationText").on("click", (e) => handleContactInformationTextClick(e.target));
-    $(".langageImage").on("mouseenter", (e) => handleLangageImageClick(e.target));
-    fetch("data.json")
-        .then(r => r.json())
-        .then(json => langagesData = json);
 });
 
 function handleScroll(scrollPos){
@@ -29,12 +25,6 @@ function handleContactInformationTextClick(e){
     navigator.clipboard.writeText(e.innerText);
     // displayCopiedPopup(e);
     // console.log(e);
-}
-
-function handleLangageImageClick(e){
-    const hovered = langagesData[e.id];
-    $("div#langageDescriptionContainer > h2").text(hovered.name);
-    $("div#langageDescriptionContainer > p").text(hovered.text);
 }
 
 // async function displayCopiedPopup(e){

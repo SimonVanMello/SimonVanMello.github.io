@@ -192,7 +192,7 @@ section#secondSection{
 
 
 section#projectsSection{
-	height: 3200px;
+	height: 2600px;
 	background-color: var(--white);
 	background-image: url("assets/images/white_to_black_background.svg");
 	background-position: bottom;
@@ -251,34 +251,6 @@ section#projectsSection{
 	font-size: 1.5rem;
 }
 
-div#langagesImagesContainer{
-	width: 450px;
-	margin-right: 50px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-div#langagesImagesContainer:hover > :not(:hover){
-	opacity: 0.4;
-}
-
-img.langageImage{
-	height: 40%;
-	border-radius: 20px;
-	margin: 5%;
-	box-shadow: 14px 14px 28px var(--light-grey),
-				-14px -14px 28px #ffffff;
-	cursor: pointer;
-	transition: all 200ms;
-}
-
-img.langageImage:active{
-	transform: scale(0.95);
-}
-
-div#langageDescriptionContainer{
-	width: 60%;
-}
 
 
 section#contactSection{
