@@ -1,5 +1,9 @@
 @media screen and (max-width: 800px) {
     /* first section */
+    h2#realName{
+        margin-top: 250px;
+    }
+
 	div#scrollIndicatorContainer{
 		display: none;
 	}
@@ -13,7 +17,7 @@
 
     /* second section */
     section#secondSection{
-        height: 150px;
+        height: 100px;
     }
 
 

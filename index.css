@@ -217,8 +217,8 @@ section#projectsSection{
 }
 
 .projectImage{
-	height: 100%;
 	width: 50%;
+	height: 100%;
 	overflow: hidden;
 	border-radius: 20px;
 }
