@@ -1,0 +1,94 @@
+@media screen and (max-width: 800px) {
+    /* first section */
+	div#scrollIndicatorContainer{
+		display: none;
+	}
+
+    p#aboutMe{
+        max-width: 80%;
+        margin-top: 150px;
+    }
+
+
+
+    /* second section */
+    section#secondSection{
+        height: 150px;
+    }
+
+
+
+    /* projects section */
+    section#projectsSection{
+        height: 2200px;
+    }
+
+    .projectContainer{
+        height: 600px;
+        width: 70%;
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    #projectContainerToReverse{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .projectImage{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .projectTextContainer{
+        width: 100%;
+    }
+
+    .projectDescription{
+        font-size: 1.2rem;
+    }
+
+
+
+    /* contact section */
+    section#contactSection{
+        height: 800px;
+    }
+
+    h2#contactTitle{
+        height: 100px;
+        font-size: 3rem;
+    }
+
+    div#contactSectionContent{
+        flex-direction: column;
+    }
+
+    form#contactForm{
+        width: 70%;
+        height: 500px;
+        margin: 0 15%;
+    }
+
+    textarea#messageInput{
+        height: 100px;
+        resize: none;
+    }
+
+    button#submitButton{
+        width: 80%;
+    }
+
+    div#contactInformation{
+        height: 200px;
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    span.contactInformationText{
+        margin-left: 15px;
+        font-size: medium;
+    }
+}

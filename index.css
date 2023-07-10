@@ -110,6 +110,7 @@ section#firstSection{
 	background-color: var(--white);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	overflow: hidden;
 	color: var(--white)
 }
@@ -134,19 +135,19 @@ a#jumpToContactSection:active{
 }
 
 h2#realName{
-	margin-left: clamp(80px, 20vw, 250px);
+	margin-left: 8vw;
 	margin-top: 300px;
-	font-size: 100px;
+	font-size: clamp(40px, 7vw, 10vw);
 	font-family: "NewGate", sans-serif;
 }
 
 p#aboutMe{
-	font-family: "AndersonGrotesk", sans-serif;
-	font-size: x-large;
-	max-width: 50%;
+	max-width: 60%;
+	margin-left: 8vw;
 	margin-top: 200px;
-	margin-left: clamp(80px, 20vw, 250px);
 	line-height: 2rem;
+	font-family: "AndersonGrotesk", sans-serif;
+	font-size: clamp(17px, 1.5vw, 2vw);
 }
 
 div#scrollIndicatorContainer{
