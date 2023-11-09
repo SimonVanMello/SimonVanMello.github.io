@@ -95,6 +95,10 @@ h1{
 	display: none;
 }
 
+a{
+	color: var(--black);
+}
+
 .noselect {
 	-webkit-user-select: none;  
 	-moz-user-select: none;    
