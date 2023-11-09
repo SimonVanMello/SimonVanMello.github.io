@@ -53,22 +53,22 @@ table {
 
 @font-face {
     font-family: "Estrella";
-    src: url("assets/fonts/Estrella.otf");
+    src: url("../assets/fonts/Estrella.otf");
 }
 
 @font-face {
     font-family: "NewGate";
-    src: url("assets/fonts/newgate-free.otf");
+    src: url("../assets/fonts/newgate-free.otf");
 }
 
 @font-face {
 	font-family: "AndersonGrotesk";
-	src: url("assets/fonts/AndersonGrotesk.otf");
+	src: url("../assets/fonts/AndersonGrotesk.otf");
 }
 
 @font-face {
 	font-family: ZenKakuGothicNew;
-	src: url("assets/fonts/ZenKakuGothicNew-Regular.ttf");
+	src: url("../assets/fonts/ZenKakuGothicNew-Regular.ttf");
 }
 
 :root{
@@ -110,7 +110,7 @@ a{
 
 section#firstSection{
 	height: 100%;
-	background-image: url("assets/images/bg.svg");
+	background-image: url("../assets/images/bg.svg");
 	/* background-color: var(--black); */
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -150,7 +150,7 @@ p#aboutMe{
 	margin-left: 8vw;
 	margin-top: 200px;
 	line-height: 2rem;
-	font-family: "AndersonGrotesk", sans-serif;
+	font-family: "ZenKakuGothicNew", sans-serif;
 	font-size: clamp(17px, 1.5vw, 2vw);
 }
 
@@ -188,7 +188,7 @@ img#mouseImage{
 
 section#secondSection{
 	height: 350px;
-	background-image: url("assets/images/black_to_white_background.svg");
+	background-image: url("../assets/images/black_to_white_background.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -210,7 +210,7 @@ section#secondSection::after{
 section#projectsSection{
 	height: 2600px;
 	background-color: var(--white);
-	background-image: url("assets/images/white_to_black_background.svg");
+	background-image: url("../assets/images/white_to_black_background.svg");
 	background-position: bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
