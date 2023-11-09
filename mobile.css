@@ -1,5 +1,5 @@
-@media screen and (max-width: 800px) {
-    /* first section */
+@media screen and (max-width: 1250px) {
+	/* first section */
     h2#realName{
         margin-top: 250px;
     }
@@ -17,7 +17,7 @@
 
     /* second section */
     section#secondSection{
-        height: 100px;
+        height: 150px;
     }
 
 
@@ -29,7 +29,7 @@
 
     .projectContainer{
         height: 600px;
-        width: 70%;
+        width: 50%;
         margin-top: 100px;
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -95,4 +95,16 @@
         margin-left: 15px;
         font-size: medium;
     }
+}
+
+@media screen and (max-width: 1000px) {
+	.projectContainer{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .projectContainer{
+		width: 70%;
+	}
 }
